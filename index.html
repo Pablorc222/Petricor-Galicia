@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Petricor Galicia · Cachorros criados con cariño</title>
+<meta name="description" content="Petricor Galicia: camadas de cachorros criadas con cariño en Galicia. Conoce nuestras razas y contacta por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f7f2;--bg2:#e6eee3;--card:#ffffff;--ink:#1f2f27;--muted:#5d7066;--green:#2f5d4a;--green2:#7fa893;--warm:#e9a76b;--line:#d7e2d6;--on-green:#f6fbf7;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101a15;--bg2:#17251e;--card:#1b2a22;--ink:#e8f2ea;--muted:#a3b8ac;--green:#8fc4aa;--green2:#3d6a56;--warm:#eeb27a;--line:#2a3c32;--on-green:#10201a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101a15;--bg2:#17251e;--card:#1b2a22;--ink:#e8f2ea;--muted:#a3b8ac;--green:#8fc4aa;--green2:#3d6a56;--warm:#eeb27a;--line:#2a3c32;--on-green:#10201a;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Manrope",system-ui,sans-serif;font-size:17px;line-height:1.7}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;line-height:1.1;margin:0;font-weight:700}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{font-family:"Fraunces",Georgia,serif;font-size:23px;font-weight:700;text-decoration:none;color:var(--green)}
+.links{display:flex;gap:24px;align-items:center;font-size:15px;font-weight:600}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:var(--green);color:var(--on-green);text-decoration:none;font-weight:700;border-radius:999px;border:2px solid var(--green);transition:.25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 24px -12px var(--green)}
+.btn.line{background:transparent;color:var(--green)}
+.links .btn{padding:9px 20px;color:var(--on-green)}
+.hero{position:relative;overflow:hidden;padding:90px 0 100px;background:radial-gradient(800px 460px at 92% 0,var(--bg2),transparent 70%),radial-gradient(520px 320px at 0 100%,color-mix(in srgb,var(--warm) 22%,transparent),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
+.tag{display:inline-block;background:var(--bg2);color:var(--green);border:1px solid var(--line);padding:6px 16px;border-radius:999px;font-weight:700;font-size:14px;margin-bottom:20px}
+.hero h1{font-size:clamp(42px,6.6vw,76px);color:var(--green);margin-bottom:20px}
+.hero h1 em{color:var(--warm);font-weight:500}
+.hero p{color:var(--muted);font-size:19px;max-width:500px;margin:0 0 32px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.frame{position:relative;aspect-ratio:1;border-radius:42% 58% 55% 45%/52% 42% 58% 48%;background:linear-gradient(150deg,var(--bg2),var(--green2));display:grid;place-items:center;overflow:hidden;border:1px solid var(--line);box-shadow:0 40px 70px -40px rgba(20,60,40,.55)}
+.frame img{width:100%;height:100%;object-fit:cover}
+.frame .ph{font-size:100px;text-align:center}
+.frame .ph small{display:block;font-family:"Manrope",sans-serif;font-size:13px;color:var(--on-green);opacity:.85;margin-top:6px}
+.drop{position:absolute;font-size:28px;opacity:.5;animation:fall 5s infinite linear}
+.drop:nth-child(2){left:12%;animation-delay:-1s}.drop:nth-child(3){left:46%;animation-delay:-2.5s}.drop:nth-child(4){left:80%;animation-delay:-4s}
+@keyframes fall{0%{top:-8%;opacity:0}20%{opacity:.5}100%{top:105%;opacity:0}}
+section{padding:90px 0}
+.eyebrow{color:var(--warm);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;margin-bottom:12px}
+h2{font-size:clamp(32px,4.4vw,50px);color:var(--green);margin-bottom:16px}
+.lead{color:var(--muted);max-width:640px;margin:0 0 46px}
+.name{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.name p{color:var(--muted);margin:0 0 14px}
+.def{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:34px;font-family:"Fraunces",serif;font-size:22px;line-height:1.45}
+.def small{display:block;font-family:"Manrope",sans-serif;font-size:14px;color:var(--muted);letter-spacing:.06em;margin-bottom:10px}
+.alt{background:var(--bg2);border-block:1px solid var(--line)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:26px;overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 24px 40px -28px rgba(20,60,40,.6)}
+.ph2{aspect-ratio:4/3;display:grid;place-items:center;font-size:58px;background:linear-gradient(150deg,var(--bg2),var(--green2));overflow:hidden}
+.ph2 img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:22px 24px 26px}
+.card h3{font-size:24px;color:var(--green);margin-bottom:6px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px 22px}
+.step b{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--warm);color:#2b1a0b;margin-bottom:14px;font-weight:800}
+.step h3{font-size:20px;color:var(--green);margin-bottom:6px}
+.step p{margin:0;color:var(--muted);font-size:15px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal div{aspect-ratio:1;border-radius:22px;display:grid;place-items:center;font-size:44px;background:linear-gradient(150deg,var(--card),var(--bg2));border:1px solid var(--line);overflow:hidden}
+.gal div:nth-child(1),.gal div:nth-child(6){grid-column:span 2;aspect-ratio:2/1}
+.gal img{width:100%;height:100%;object-fit:cover}
+.contact{background:var(--green);color:var(--on-green);text-align:center}
+.contact h2{color:var(--on-green)}
+.contact .lead{color:var(--on-green);opacity:.85;margin-inline:auto}
+.contact .btn{background:var(--on-green);color:var(--green);border-color:var(--on-green)}
+.contact .btn.line{background:transparent;color:var(--on-green)}
+.contact .cta{justify-content:center}
+.num{display:block;font-family:"Fraunces",serif;font-size:clamp(34px,6vw,58px);text-decoration:none;margin:4px 0 26px}
+footer{padding:26px 0;text-align:center;color:var(--muted);font-size:14px}
+@media(max-width:860px){.hero .wrap,.name{grid-template-columns:1fr;gap:38px}.grid3,.steps{grid-template-columns:1fr}.gal{grid-template-columns:repeat(2,1fr)}.gal div:nth-child(1),.gal div:nth-child(6){grid-column:span 2}.links a:not(.btn){display:none}section{padding:60px 0}.hero{padding:52px 0 62px}.frame{max-width:340px;margin:0 auto}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="brand" href="#inicio">🌿 Petricor Galicia</a>
+<div class="links"><a href="#nombre">Petricor</a><a href="#razas">Razas</a><a href="#camadas">Camadas</a><a href="#proceso">Proceso</a><a class="btn" href="https://wa.me/34629712905" target="_blank" rel="noopener">WhatsApp</a></div>
+</div></nav>
+
+<header class="hero" id="inicio"><div class="wrap">
+<div>
+<span class="tag">🐾 Cachorros criados en Galicia</span>
+<h1>Cada camada, <em>una historia</em> que empieza con cariño</h1>
+<p>En Petricor Galicia cuidamos a nuestros cachorros desde el primer día, con tiempo, paciencia y mucho amor, hasta que encuentran a la familia que los estaba esperando.</p>
+<div class="cta"><a class="btn" href="https://wa.me/34629712905" target="_blank" rel="noopener">Escribir por WhatsApp</a><a class="btn line" href="#camadas">Ver camadas</a></div>
+</div>
+<div class="frame">
+<span class="drop">💧</span><span class="drop">💧</span><span class="drop">💧</span>
+<!-- Foto real: sustituye el div .ph por <img src="hero.jpg" alt="Cachorro de Petricor Galicia"> -->
+<div class="ph">🐶<small>Aquí irá tu mejor foto</small></div>
+</div>
+</div></header>
+
+<section id="nombre"><div class="wrap name">
+<div class="def"><small>PETRICOR · sustantivo</small>El olor a tierra mojada que deja la lluvia al caer sobre el suelo seco.</div>
+<div>
+<div class="eyebrow">Nuestro nombre</div>
+<h2>Algo que se siente en casa</h2>
+<p>Elegimos Petricor porque ese olor evoca calma, hogar y comienzo. Es lo que queremos transmitir con cada cachorro: la ilusión de una nueva etapa y la tranquilidad de saber que ha sido cuidado con dedicación.</p>
+<p>Seguimos el día a día de nuestras camadas en redes, y compartimos también consejos de educación, juego y bienestar para que tu cachorro crezca feliz.</p>
+</div>
+</div></section>
+
+<section class="alt" id="razas"><div class="wrap">
+<div class="eyebrow">Nuestras razas</div>
+<h2>Conoce a los pequeños de la casa</h2>
+<p class="lead">Estas son algunas de las razas que puedes ver en nuestras camadas. Pregúntanos por disponibilidad.</p>
+<div class="grid3">
+<article class="card"><div class="ph2">🐕</div><div class="body"><h3>Bulldog francés</h3><p>Cariñoso, divertido y muy pegado a su familia.</p></div></article>
+<article class="card"><div class="ph2">🐶</div><div class="body"><h3>Shih tzu</h3><p>Dulce y juguetón, un compañero perfecto para el hogar.</p></div></article>
+<article class="card"><div class="ph2">🐾</div><div class="body"><h3>Chihuahua</h3><p>Pequeño en tamaño y enorme en personalidad.</p></div></article>
+</div>
+</div></section>
+
+<section id="camadas"><div class="wrap">
+<div class="eyebrow">Camadas</div>
+<h2>Cada una tiene su nombre</h2>
+<p class="lead">Nos gusta presentar cada camada con su propia identidad, como la de Fiona &amp; Jacob. Síguelas en Instagram para ver su evolución.</p>
+<div class="gal">
+<div>🐶</div><div>🐕</div><div>🤎</div><div>🐾</div><div>🖤</div><div>🧺</div>
+</div>
+</div></section>
+
+<section class="alt" id="proceso"><div class="wrap">
+<div class="eyebrow">Cómo adoptar</div>
+<h2>Un proceso sencillo y cercano</h2>
+<p class="lead">Te acompañamos desde el primer mensaje hasta el día en que tu cachorro llega a casa.</p>
+<div class="steps">
+<div class="step"><b>1</b><h3>Escríbenos</h3><p>Cuéntanos qué raza buscas y cómo es tu hogar.</p></div>
+<div class="step"><b>2</b><h3>Conócelos</h3><p>Te enseñamos fotos y vídeos de las camadas.</p></div>
+<div class="step"><b>3</b><h3>Reserva</h3><p>Aparta a tu cachorro y sigue cómo crece.</p></div>
+<div class="step"><b>4</b><h3>Bienvenido a casa</h3><p>Te asesoramos para que la llegada sea tranquila.</p></div>
+</div>
+</div></section>
+
+<section class="contact" id="contacto"><div class="wrap">
+<div class="eyebrow" style="color:var(--warm)">Contacto</div>
+<h2>¿Hablamos de tu futuro compañero?</h2>
+<p class="lead">Escríbenos por WhatsApp y te contamos las camadas disponibles.</p>
+<a class="num" href="https://wa.me/34629712905" target="_blank" rel="noopener">629 71 29 05</a>
+<div class="cta">
+<a class="btn" href="https://wa.me/34629712905" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn line" href="https://www.instagram.com/petricor_galicia/" target="_blank" rel="noopener">Instagram</a>
+<a class="btn line" href="https://www.tiktok.com/@petricorgalicia" target="_blank" rel="noopener">TikTok</a>
+</div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Petricor Galicia · Cachorros criados con cariño 🌿</div></footer>
+</body>
+</html>
